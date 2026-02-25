@@ -8,6 +8,6 @@ spec:
   templates:
     - name: whalesay
       container:
-        image: docker/whalesay:latest
-        command: [cowsay]
+        image: alpine:latest
+        command: [echo]
         args: ["Hello from Argo Workflow!"]
