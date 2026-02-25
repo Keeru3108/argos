@@ -12,5 +12,6 @@ metadata:
   namespace: argo
 data:
   install: |
-    kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/latest/download/install.yaml
+   kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/download/v3.4.7/install.yaml
+
 
