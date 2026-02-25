@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argo
+---
+# Install Argo Workflows controller and CRDs
+# This pulls directly from the official Argo release
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argo-install
+  namespace: argo
+data:
+  install: |
+    kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/latest/download/workflow-controller.yaml
